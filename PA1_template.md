@@ -64,7 +64,7 @@ head(activity_tot)
 hist(activity_tot$total)
 ```
 
-![plot of chunk unnamed-chunk-4](figures//unnamed-chunk-4-1.png)
+![plot of chunk unnamed-chunk-4](figure//unnamed-chunk-4-1.png)
 
 3.Calculate and report the mean and median of the total number of steps taken per day
 
@@ -100,7 +100,7 @@ head(activity_avg)
 plot(avg ~ interval, activity_avg, type = "l")
 ```
 
-![plot of chunk unnamed-chunk-6](figures//unnamed-chunk-6-1.png)
+![plot of chunk unnamed-chunk-6](figure//unnamed-chunk-6-1.png)
 
 2.Which 5-minute interval, on average across all the days in the dataset, contains the maximum number of steps?
 
@@ -170,7 +170,7 @@ head(activity_impt_tot)
 hist(activity_impt_tot$total)
 ```
 
-![plot of chunk unnamed-chunk-10](figures//unnamed-chunk-10-1.png)
+![plot of chunk unnamed-chunk-10](figure//unnamed-chunk-10-1.png)
 
 ```r
 summary(activity_impt_tot$total)[3:4]
@@ -224,4 +224,4 @@ xyplot(avg ~ interval | daytype, data = activity_impt_w_avg, layout = c(1, 2), t
        ylab = "Number of Steps", xlab = "Interval")
 ```
 
-![plot of chunk unnamed-chunk-12](figures//unnamed-chunk-12-1.png)
+![plot of chunk unnamed-chunk-12](figure//unnamed-chunk-12-1.png)
